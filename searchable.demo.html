@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="searchable.jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#search').searchable({'search_target' : '#the-target'});
+		});
+	</script>
+</head>
+<body>
+<input type="text" id="search">
+
+<ul id="the-target">
+	<li class="liheader" style="list-style: none;" id="li-header">first item in the list can be a header</li>
+	<li class="searchable" id="li-1">1</li>
+	<li id="li-1-1">1.1 non searchable item</li>
+	<li class="searchable" id="li-2">2</li>
+	<li class="searchable" id="li-3">a</li>
+	<li class="searchable" id="li-4">a1</li>
+	<li class="searchable" id="li-5">ba</li>
+</ul>
+</body>
+</html>
